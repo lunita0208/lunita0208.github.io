@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Mi Amor</title>
+
+<style>
+    /* ===== ADAPTACIÓN A CELULAR ===== */
+@media (max-width: 600px) {
+
+    header {
+        font-size: 24px;
+        padding: 15px 0;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        padding: 8px;
+    }
+
+    nav button {
+        margin: 5px;
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    .card {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    img {
+        max-width: 95%;
+    }
+
+    footer {
+        font-size: 14px;
+        padding: 15px;
+    }
+
+    #playFallback {
+        font-size: 14px;
+        padding: 10px 15px;
+        right: 12px;
+        bottom: 12px;
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+    color: #ffebf0;
+    background-color: #ff6fa8;
+    margin-top: 40px;
+    border-top: 2px solid white;
+}
+</style>
+
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+    body {
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+        background: linear-gradient(135deg, #ffe6f2, #ffd1e8);
+        animation: fondo 8s infinite alternate ease-in-out;
+    }
+
+    @keyframes fondo {
+        from { background: #ffe6f2; }
+        to { background: #ffd9ff; }
+    }
+
+    header {
+        background: #ff4d88;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+        font-size: 32px;
+        font-family: 'Dancing Script', cursive;
+        animation: deslizar 1s ease-out;
+    }
+
+    @keyframes deslizar {
+        from { transform: translateY(-50px); opacity: 0; }
+        to { transform: translateY(0); opacity: 1; }
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        background: #ff99c2;
+        padding: 10px;
+    }
+
+    nav button {
+        margin: 0 10px;
+        padding: 10px 20px;
+        border: none;
+        background: white;
+        color: #ff4d88;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 8px;
+        transition: 0.3s;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+    }
+
+    nav button:hover {
+        background: #ff4d88;
+        color: white;
+        transform: scale(1.1);
+    }
+
+    .page {
+        display: none;
+        padding: 30px;
+        text-align: center;
+        animation: fade 0.8s ease-in-out;
+    }
+
+    @keyframes fade {
+        from { opacity: 0; transform: scale(0.97); }
+        to { opacity: 1; transform: scale(1); }
+    }
+
+    .card {
+        background: white;
+        padding: 20px;
+        margin: 20px auto;
+        max-width: 680px;
+        border-radius: 15px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        animation: subir 1s ease-out;
+    }
+
+    @keyframes subir {
+        from { transform: translateY(30px); opacity: 0; }
+        to { transform: translateY(0); opacity: 1; }
+    }
+
+    h2 {
+        color: #ff1a75;
+        font-family: 'Dancing Script', cursive;
+        font-size: 36px;
+    }
+
+    p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 17px;
+        line-height: 1.6;
+    }
+
+    img {
+        max-width: 80%;
+        border-radius: 12px;
+        margin-top: 15px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+        transition: transform 0.4s;
+    }
+
+    img:hover {
+        transform: scale(1.03);
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    🎓 Para mi amor, por tu graduación 🎓
+</header>
+
+<nav>
+    <button onclick="showPage('inicio')">Inicio</button>
+    <button onclick="showPage('mensaje')">Mensaje</button>
+    <button onclick="showPage('sorpresa')">Sorpresa</button>
+</nav>
+
+<!-- INICIO -->
+<div id="inicio" class="page" style="display:block;">
+    <div class="card">
+        <h2>Felicidades, mi amorr 💘</h2>
+        <p>Hoy celebramos un logro enorme. Me siento orgulloso de ti, de tu esfuerzo y de todo lo que estás construyendo. Espero te guste uno de los regalitos que te hice, probablemente este sea el que mas barato me salió, pero lo hice con demasiado amor, quizás sea una bobadita pero espero te guste. Los otros espero tambien te gusten. Te amo.</p>
+        <img src="foto6.png" alt="Graduación">
+    </div>
+</div>
+
+<!-- MENSAJE -->
+<div id="mensaje" class="page">
+    <div class="card">
+        <h2>Un mensajito</h2>
+        <p>Hoy que se que soy tu novio, me pone feliz haber podido ayudarte a terminar de completar esta etapa y estando a tu lado, aunque creas que no, tú a mi me ayudaste demasiado tambien, eres un empujoncito en mi vida, que me hace ser mejor y completar todas mis metas, espero así tú las cumplas tambien, independientemente de si en un futuro no estamos juntos (espero que si), te deseo que seas muy feliz. Se que lo de nosotros ha sido dificil, lo sigue siendo, pero nunca me rendiré, porque el amor que siento por ti y el orgullo cada vez que cumples algo en tu vida, superas algo o luchas con algo, no lo cambio por nada en el mundo. Eres una inspiración para mi. Eres una mujer demasiado inteligente, aunque no lo creas, la inteligencia no solo son matematicas, cuadernos y colegio. La inteligencia natural no se estudia, se construye durante los años y tú eres demasiado inteligente. Aún recuerdo las primeras veces que empezamos a hablar y me lleno de nostalgia, nunca habia querido conocer tanto a una persona y entenderla tanto, nunca se me habia quitado el miedo a mostrar lo que realmente soy, lo que realmente puedo dar y lo que puedo cambiar para bien por una persona, asi que el día que te sientas menos, que sientas que no estas haciendo nada por tu vida (ojala nunca pase), quiero que recuerdes que en unos meses hiciste en mi vida lo que nunca nadie habia hecho. Ya van a ser 10 meses de ese mensajito que cambio todo el 2025, que cambio mi forma de ser y pude desahogar todo ese amor que tenia, que nunca creí que nadie merecía, pero tú, tú lo mereces todo y espero poder dartelo. Tambien se que este logro para ti tiene un sabor un poco amargo, pero yo se que asi como hay personas orgullosas de ti en la tierra, en el cielo tambien. Y yo tambien, asi este en la tierra o en donde sea que este, siempre voy a estar orgulloso de ti. Te amo. Por siempre tuyo.</p>
+        <img src="foto1.png" alt="Foto linda" style="max-width: 40%; border-radius: 12px; margin-top: 20px;">
+    </div>
+</div>
+
+<!-- MOMENTOS -->
+<div id="momentos" class="page">
+    <div class="card">
+        <h2>Nuestros Momentos 💕</h2>
+        <p>Pequeños instantes que vuelven mi vida más feliz.</p>
+        <img src="foto4.png" alt="Amor">
+    </div>
+</div>
+
+<!-- SORPRESA -->
+<div id="sorpresa" class="page">
+    <div class="card">
+        <h2>Una sorpresita para ti</h2>
+        <p>Presione el botón, varias veces.</p>
+        <button onclick="mostrarMensaje()"
+            style="padding: 15px 25px; font-size: 18px; border-radius: 10px; background:#ff4d88; color:white; border:none; font-family:'Poppins',sans-serif;">
+            Presiona aquí
+        </button>
+    </div>
+</div>
+
+<script>
+function showPage(pageId) {
+    document.querySelectorAll('.page').forEach(p => p.style.display = 'none');
+    document.getElementById(pageId).style.display = 'block';
+}
+
+let indexMensaje = 0;
+
+function mostrarMensaje() {
+    const frases = [
+        "Gracias","Por","Estar","Cuando","Nadie",
+        "Está","Te","Amo","Amor de mi vida 💘"
+    ];
+
+    alert(frases[indexMensaje]);
+    indexMensaje = (indexMensaje + 1) % frases.length;
+}
+</script>
+
+<footer>
+    Hecho con mucho amor 💌 | De Julián para Luna. Por siempre tuyo.
+</footer>
+
+<audio id="musica" preload="auto" loop>
+    <source src="cancion.mp3" type="audio/mpeg">
+    Tu navegador no soporta audio.
+</audio>
+
+<button id="playFallback" style="
+    position: fixed;
+    right: 18px;
+    bottom: 18px;
+    z-index: 9999;
+    display: none;
+    background: linear-gradient(135deg,#ff6fa8,#ff3c8c);
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 30px;
+    font-size: 16px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+">🔊 Reproducir música</button>
+
+<script>
+(function(){
+    const audio = document.getElementById('musica');
+    const fallback = document.getElementById('playFallback');
+    let started = false;
+
+    function tryStart() {
+        if (started) return;
+        started = true;
+        audio.volume = 0;
+        const playPromise = audio.play();
+        if (playPromise) {
+            playPromise.then(() => {
+                doFadeIn();
+                hideFallback();
+                removeListeners();
+            }).catch(() => {
+                started = false;
+                showFallback();
+            });
+        }
+    }
+
+    function doFadeIn() {
+        let vol = 0;
+        const interval = setInterval(() => {
+            vol = Math.min(1, vol + 0.05);
+            audio.volume = vol;
+            if (vol >= 1) clearInterval(interval);
+        }, 80);
+    }
+
+    function showFallback(){ fallback.style.display = 'block'; }
+    function hideFallback(){ fallback.style.display = 'none'; }
+
+    function removeListeners() {
+        window.removeEventListener('scroll', startHandler);
+        window.removeEventListener('touchstart', startHandler);
+        window.removeEventListener('wheel', startHandler);
+        window.removeEventListener('keydown', startHandler);
+        window.removeEventListener('click', startHandler);
+    }
+
+    function startHandler() { tryStart(); }
+
+    window.addEventListener('scroll', startHandler, {passive:true});
+    window.addEventListener('touchstart', startHandler);
+    window.addEventListener('wheel', startHandler);
+    window.addEventListener('keydown', startHandler);
+    window.addEventListener('click', startHandler);
+
+    fallback.addEventListener('click', () => {
+        const p = audio.play();
+        if (p) {
+            p.then(() => {
+                doFadeIn();
+                hideFallback();
+                removeListeners();
+            });
+        }
+    });
+
+    audio.addEventListener('pause', () => {
+        setTimeout(() => {
+            if (audio.paused) showFallback();
+        }, 300);
+    });
+
+})();
+</script>
+
+</body>
+</html>
